@@ -1,0 +1,18 @@
+:root {
+  --heading: "Josefin Sans", sans-serif;
+  --body: "Josefin Slab", serif;
+  --monospace: "PT Mono", monospace;
+  --primary-color: black;
+  --secondary-color: white;
+  --button-hover-transiton: all 200ms ease-in-out;
+  --button-border-radius: 20px;
+  --yellow: #ffe700;
+  --pink: #fe4e6e;
+  --purple: #613864;
+  --gray: #faf9f9;
+  --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  --wavy-decoration: var(--yellow) wavy underline;
+}
+body {
+  font-family: var(--body);
+}
