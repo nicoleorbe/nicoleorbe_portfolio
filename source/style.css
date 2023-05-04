@@ -1,139 +1,16 @@
-:root {
-  /* --heading: "viktor-script", sans-serif;
-  --body: "Open Sans", sans-serif; */
-  --monospace: "PT Mono", monospace;
-  --primary-color: black;
-  --secondary-color: white;
-  --button-hover-transiton: all 200ms ease-in-out;
-  --button-border-radius: 20px;
-  --yellow: #ffe700;
-  --pink: #fe4e6e;
-  --purple: #613864;
-  --gray: #faf9f9;
-  --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  --wavy-decoration: var(--yellow) wavy underline;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
+.section {
   text-align: center;
-  margin: 0;
+  font-size: 3em;
+  font-family: arial;
 }
 
-h1 {
-  font-size: 150px !important;
-  text-align: center;
-  margin: 0;
+/* slider arrows left/right */
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #ff6363 !important;
+  right: 45px !important;
 }
-
-h2 {
-  font-size: 48px !important;
-}
-
-h3 {
-  font-size: 24px !important;
-  opacity: 0.7;
-}
-
-body {
-  font-weight: 500;
-  font-size: 18px;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 !important;
-}
-
-/* header-nav bar */
-.navbar {
-  background-color: var(--purple) !important;
-}
-
-.navbar-brand,
-.nav-link {
-  color: white !important;
-}
-
-.navbar-brand {
-  font-family: monospace !important;
-  font-size: larger;
-}
-
-/* .nav-link {
-  font-family: var(--heading);
-} */
-
-.fa-instagram,
-.fa-linkedin {
-  font-size: larger;
-  color: #ffffff;
-}
-
-.nav-item .active {
-  text-decoration: var(--wavy-decoration);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 75px;
-}
-
-footer {
-  bottom: 10px;
-}
-
-footer .grid {
-  grid-gap: 30px;
-}
-
-footer h3 {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-footer p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: var(--pink);
-}
-
-.site-info {
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-.site-info a {
-  color: var(--purple);
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.site-info a:hover {
-  text-decoration: underline;
-}
-
-.copyright {
-  font-size: 12px;
-  line-height: 12px;
+.fp-controlArrow.fp-prev {
+  border-color: transparent #ff6363 transparent transparent !important;
+  left: 45px !important;
 }
