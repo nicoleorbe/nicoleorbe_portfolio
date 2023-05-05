@@ -115,52 +115,95 @@ button:hover {
 }
 
 .hello {
+  display: flex;
   color: white;
   background-color: var(--purple);
   text-align: left;
-  padding: 150px 50px auto;
   height: 100vh;
 }
 
-.hello h1,
-.hello h2 {
-  margin: 0;
+.arrow-down .fa-arrow-down {
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
 }
 
+.hello h1 {
+  line-height: 1em;
+}
 .hello h2 {
   font-size: 24px;
+}
+
+.hero {
+  margin-top: 350px;
 }
 
 .work img {
   max-width: 100% !important;
 }
 
-/* navigation dots */
-#fp-nav ul li a span {
-  background-color: var(--yellow);
-}
-.fp-slidesNav ul li a span {
-  background-color: var(--yellow);
+.contact {
+  color: white;
+  background-color: var(--gray);
+  height: 100vh;
 }
 
-/* slider navigation arrows left/right */
-
-.fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent white !important;
-  right: 65px !important;
-  top: 80% !important;
+footer {
+  /* position: absolute; */
+  bottom: 10px;
 }
 
-.fp-arrow.fp-next {
-  border-width: 20.5px 0 20.5px 20px;
+footer .grid {
+  grid-gap: 30px;
 }
 
-.fp-controlArrow.fp-prev {
-  border-color: transparent white transparent transparent !important;
-  left: 45px !important;
-  top: 80% !important;
+footer h3 {
+  font-size: 36px;
+  line-height: 36px;
 }
 
-.fp-arrow.fp-prev {
-  border-width: 20.5px 20px 20.5px 0;
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: var(--pink);
+}
+
+.site-info {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.site-info a {
+  color: var(--purple);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-info a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
 }
