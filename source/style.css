@@ -116,8 +116,10 @@ button:hover {
 
 .hello {
   color: white;
+  background-color: var(--purple);
   text-align: left;
-  padding: 50px;
+  padding: 150px 50px auto;
+  height: 100vh;
 }
 
 .hello h1,
