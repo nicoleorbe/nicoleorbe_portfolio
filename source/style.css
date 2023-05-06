@@ -1,8 +1,8 @@
 :root {
-  --yellow: #ffe700;
-  --pink: #fe4e6e;
-  --purple: #613864;
-  --gray: #d8d7d7;
+  --first: #f9e2af;
+  --second: #009fbd;
+  --third: #210062;
+  --primary: #77037b;
 }
 
 * {
@@ -19,7 +19,6 @@ h1 {
 h2 {
   font-size: 80px !important;
   font-weight: 800 !important;
-  color: var(--purple) !important;
 }
 
 h3 {
@@ -34,20 +33,25 @@ h4 {
 
 button {
   padding: 15px 30px 12px !important;
-  background-color: var(--pink);
+  background-color: white;
   border: none;
   border-radius: 30px !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 button a {
   text-decoration: none;
-  color: white;
+  color: var(--third);
   font-weight: 600;
 }
 
 button:hover {
-  background-color: var(--purple);
+  background-color: var(--primary);
   transition: all 200ms ease-in-out;
+}
+
+button a:hover {
+  color: white;
 }
 
 #menu {
@@ -59,7 +63,7 @@ button:hover {
   width: 100%;
   padding: 10px;
   margin: 0;
-  background-color: var(--purple);
+  background-color: var(--primary);
 }
 
 #menu li {
@@ -79,13 +83,16 @@ button:hover {
 
 #menu li a,
 #menu li.active a {
-  /* padding: 9px 18px; */
   display: block;
 }
 #menu li:hover,
 #menu li.active a {
   padding: 0 0.1em;
-  background-image: linear-gradient(to right, var(--pink) 0%, var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--third) 0%,
+    var(--third) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-position: left 85%;
@@ -104,20 +111,19 @@ button:hover {
   width: 2px !important;
 }
 
-.section {
-  text-align: center;
-  padding: 50px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.section {
+  padding: 50px;
+}
+
 .hello {
   display: flex;
   color: white;
-  background-color: var(--purple);
+  background-color: var(--primary);
   text-align: left;
   height: 100vh;
 }
@@ -140,13 +146,46 @@ button:hover {
   margin-top: 350px;
 }
 
+.tools {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.tech-icons {
+  font-size: 20px;
+}
 .work img {
   max-width: 100% !important;
 }
 
+.slide h2 {
+  text-align: center;
+  padding: 25px auto;
+}
+
+.slide h3 {
+  font-size: 72px !important;
+  line-height: 72px !important;
+}
+
+.slide {
+  text-align: left;
+  padding: 50px 50px 50px 75px;
+}
+
+.slide-one {
+  background-color: var(--second);
+  margin: 0;
+}
+.slide-two {
+  background-color: var(--third);
+  color: white;
+  margin: 0;
+}
+
 .contact {
   color: white;
-  background-color: var(--gray);
+  background-color: var(--primary);
   height: 100vh;
 }
 
@@ -184,7 +223,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--pink);
+  color: var(--third);
 }
 
 .site-info {
