@@ -1,8 +1,8 @@
 :root {
-  --first: #f9e2af;
-  --second: #009fbd;
-  --third: #210062;
-  --primary: #77037b;
+  --green: #66bfbf;
+  --ltgreen: #eaf6f6;
+  --white: #fcfefe;
+  --pink: #f76b8a;
 }
 
 footer {
@@ -11,24 +11,23 @@ footer {
 }
 
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
 nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  color: #333;
+  /* padding: 10px; */
 }
 
 .container {
-  background-color: #333;
-  color: #fff;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  height: 90px;
 }
 
 .logo {
@@ -53,11 +52,16 @@ nav {
   cursor: pointer;
   font-size: 60px;
   display: none;
+  color: white;
 }
 
 .menu a {
-  color: #fff;
+  color: #333;
+  font-size: 24px;
   text-decoration: none;
+}
+.menu a:hover {
+  color: var(--pink);
 }
 
 .content {
@@ -73,17 +77,30 @@ nav {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: #333;
   margin: 5px 0;
+}
+.bar:hover {
+  background-color: var(--pink);
 }
 
 /* Hamburger Menu Styles END */
 
-.fa-instagram,
-.fa-linkedin {
-  font-size: larger;
-  color: #ffffff;
-  padding: 0 !important;
+.profile-content {
+  flex-direction: row;
+  justify-content: center;
+  margin: 150px auto;
+  height: unset;
+}
+
+.socials a {
+  color: #f76b8a;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 24px !important;
 }
 
 .tools-mobile {
@@ -128,10 +145,17 @@ nav {
     height: 100%;
     width: 100%;
     background-color: #333;
+    margin: 0;
   }
 
   .menu.active li {
     margin: 20px 0;
+  }
+  .menu.active a {
+    color: white;
+  }
+  .menu.active a:hover {
+    color: var(--pink);
   }
 
   .menu.active li:last-child {
