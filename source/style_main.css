@@ -4,6 +4,9 @@
   --lt-pink: #ffece9;
   --pink: #ffa8a6;
   --lt-green: #c5fbe7;
+  --button-hover-transiton: all 200ms ease-in-out;
+  --button-border-radius: 30px;
+  --box-shadow: 10px 10px 20px rgba(109, 108, 109, 0.3);
 }
 
 body,
@@ -28,6 +31,21 @@ a:hover {
 footer {
   width: 100%;
   text-align: center;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px 6px;
+  border: none;
+  border-radius: var(--button-border-radius);
+  transition: var(--button-hover-transiton);
+  box-shadow: var(--box-shadow);
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 5px;
 }
 
 /* Styles for the navigation bar */
@@ -266,6 +284,109 @@ footer {
 
 /* certificate grid on certificates.html */
 
+/* my work grid */
+.title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cards {
+  margin: 0 100px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.cards-header {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.card {
+  background: white;
+  margin: 0 0 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 8px;
+}
+
+.card-header {
+  padding: 0;
+  border: none;
+}
+.card-image {
+  max-width: 100%;
+  display: block;
+}
+
+.card-title h4 {
+  padding: 5px 20px 10px;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+.card-title p {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 6px 10px 3px;
+  vertical-align: middle;
+}
+
+.card-body {
+  padding: 10px 30px;
+}
+
+.card-footer {
+  border: none;
+  background-color: white;
+}
+
+.card button {
+  background: var(--pink);
+  font-weight: 800;
+  margin-bottom: 20px;
+  border: none;
+}
+.card button a {
+  color: white;
+}
+
+.card button:hover {
+  background: var(--green);
+}
+
+.card a {
+  font-weight: 800;
+}
+
+/* tech icons */
+
+ul {
+  margin-top: 20px;
+}
+
+.tools,
+.tools-mobile {
+  display: inline-block;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.tools li,
+.tools-mobile li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.tech-icons {
+  font-size: 20px;
+}
+
 /* footer start */
 .site-info {
   display: absolute;
@@ -310,6 +431,11 @@ footer {
     display: grid;
     margin: 20px 100px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-cards {
+    margin: 0 40px;
+    grid-template-columns: 1fr;
   }
 }
 
