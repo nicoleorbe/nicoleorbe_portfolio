@@ -390,7 +390,7 @@ ul {
 /* footer start */
 .site-info {
   display: absolute;
-  bottom: 10px;
+  margin: 10px;
 }
 
 .site-info a {
